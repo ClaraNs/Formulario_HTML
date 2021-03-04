@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Pollos Hermanos</title>
+</head>
+<body>
+    <form method="GET" action="http://arquivo.devmedia.com.br/projeto/requisicao.php">
+
+        <fieldset>
+            <legend>Conta</legend>
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" required minlength="10" maxlength="250"/>
+            </div>
+
+            <div>
+                <label>Senha:</label>
+                <input type="password" name="senha" required minlength="6" maxlength="8"/>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div>
+                <label>Nome:</label>
+                <input type="text" name="nome" placeholder="Ex:Ana" required minlength="2" maxlength="250"/>
+            </div>
+            
+            <div>
+                <label>Telefone:</label>
+                <input type="tel" name="tel" placeholder="(35) 99999-9999" required/>
+            </div>
+
+            <div>
+                <label>Sexo:</label>
+                <input type="radio" value="masculino" name="sexo" checked/>
+                <label>Masculino</label>
+                <input type="radio" value="feminino" name="sexo"/>
+                <label>Feminino</label>
+            </div>
+
+            <div>
+                <label>Data de nascimento:</label>
+                <input type="date" name="nascimento" required/>
+            </div>
+
+            <div>
+                <label>Foto de perfil:</label>
+                <input type="file" name="foto_perfil" accept="image/*" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+        <div>
+            <label>Rua:</label>
+            <input type="text" name="rua" required/>
+        </div>
+
+        <div>
+            <label>Número:</label>
+            <input type="number" name="numero" min="1" max="9999" required/>
+        </div>
+
+        <div>
+            <label>Complemento:</label>
+            <input type="text" name="Complemento"/>
+        </div>
+
+        <div>
+            <label>Cidade:</label>
+            <input type="text" name="cidade" required/>
+        </div>
+
+        <div>
+            <label>Estado:</label>
+            <select name="estado">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Anúncio</legend>
+            <div>
+                <label>Como conheceu Los Pollos Hermanos:</label>
+                <textarea name="como_conheceu_a_franquia" maxlength="300" placeholder="Explique para nós como você conheceu nossa rede de restaurantes"></textarea>
+            </div>
+
+            <div>
+                <input type="checkbox" checked name="receber_anuncios"/> 
+                <label>Desejo receber as ofertas por e-mail</label>  
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Enviar"/>
+        
+    </form>
+</body>
+</html>
